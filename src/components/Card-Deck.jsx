@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-import Card from "./Card";
-import Button from "./Button";
+import Card from "./Card"
+import Button from "./Button"
 
-const Deck = () => {
+const Card_Deck = () => {
     const flashcards = [
         {color:"lavender", style:"border-radius:12px", embed:"https://open.spotify.com/embed/track/5ocSQW5sIUIOFojwXEz9Ki?utm_source=generator", 
             width:"100%", height:"352", frameBorder:"0", allowfullscreen:"", 
             allow:"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", 
             loading:"lazy", answer:"Supernatural by NewJeans"},
-        {color:"teal", audio:"", image:""},
-        {color:"gold", audio:"", image:""},
-        {color:"mustard", audio:"", image:""},
-        {color:"soft-pink", audio:"", image:""}
+        {color:"teal", embed:"https://open.spotify.com/embed/track/3AoEQRuFf8zVXWqSLo2UOi?utm_source=generator",
+            answer:"Crazy by LE SSERAFIM"},
+        {color:"gold", embed:"https://open.spotify.com/embed/track/6i8MbzVn4nzyjUcSoVcz7B?utm_source=generator",
+            answer:"Armageddon by aespa"},
+        {color:"mustard", embed:"https://open.spotify.com/embed/track/2gYj9lubBorOPIVWsTXugG?utm_source=generator",
+            answer:"After Like by IVE"},
+        {color:"soft-pink", embed:"https://open.spotify.com/embed/track/7n6L2QVQ0eDqXUVRZ8qpY8?utm_source=generator",
+            answer:"Bye My Neverland by KISS OF LIFE"}
     ];
 
     const [currCard, setCard] = useState(0);
@@ -41,11 +45,12 @@ const Deck = () => {
     };
 
     const toggleAnswer = () => {
+
         setAnswer(!showAnswer);
     }
 
     return (
-        <div className="Deck">
+        <div className="deck">
             <Card
                 color={flashcards[currCard].color}
                 style={flashcards[currCard].style}
@@ -58,16 +63,13 @@ const Deck = () => {
                 loading={flashcards[currCard].loading}
                 answer={flashcards[currCard].answer}
                 showAnswer={showAnswer}
-                toggleAnswer={toggleAnswer}
+                onClick={toggleAnswer}
             />
 
-            <div>
-                <button>
-
-                </button>
-            </div>
+            <Button arrow="<-" onClick={handlePrev}/>
+            <Button arrow="->" onClick={handleNext}/>
         </div>
     );
 };
 
-export default Deck;
+export default Card_Deck;

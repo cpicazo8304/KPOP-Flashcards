@@ -1,25 +1,20 @@
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-#root {
-  text-align: center;
-}
-body {
+.App {
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  margin-left: 100px;
+  width: 1075px;
+  height: 85vh;
+  background-color: rgb(60, 60, 60);
+  align-items: center;
+  border-radius: 15px;
 }
 
-h1 {
+h2 {
+  margin: 0px;
+  margin-top: 40px;
+}
+
+h3 {
+  margin: 0px;
+  margin-top: 5px;
 }
