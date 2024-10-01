@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![]()
+![](https://github.com/cpicazo8304/KPOP-Flashcards/blob/master/flashcards.gif)
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [ScreenToGif](https://www.screentogif.com/)
 <!-- Recommended tools:
