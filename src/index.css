@@ -21,20 +21,75 @@ body {
   min-height: 100vh;
 }
 
-.card {
-  width: 50;
-  height: 50px;
+.kpop-group {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 0px;
+  margin-top: 10px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+h4 {
+  margin: 0px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+h6 {
+  margin: 0px;
+  margin-left: 55px;
+}
+
+.deck {
+  margin: 0px;
+  margin-top: 20px;
+  height: 300px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  color: black;
+  box-shadow: -1px 2px 2px rgb(114, 114, 114);
+  cursor: pointer;
+}
+
+.green {
+  background: rgb(194, 244, 194);
+}
+
+.red {
+  background: rgb(247, 202, 202);
+}
+
+.blue {
+  background: rgb(169, 203, 255);
+}
+
+.yellow {
+  background: rgb(250, 250, 195);
+}
+
+.pink {
+  background: rgb(255, 218, 224);
+}
+
+.teal {
+  background: rgb(188, 243, 243);
+}
+
+.orange {
+  background: rgb(244, 210, 146);
+}
+
+.purple {
+  background: rgb(218, 184, 232);
+}
+
+.lavender {
+  background: lavender;
+}
+
+.gold {
+  background: rgb(240, 231, 176);
 }
