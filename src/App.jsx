@@ -31,7 +31,6 @@ const App = () => {
   const [currCard, setCard] = useState(0);
 
   const handleNext = () => {
-    setAnswer(false);
     if (currCard < flashcards.length - 1) 
     {
       setCard(currCard + 1);
@@ -43,7 +42,6 @@ const App = () => {
   };
 
   const handlePrev = () => {
-    setAnswer(false);
     if (currCard >= 1) {
       setCard(currCard - 1);
     }
@@ -53,17 +51,12 @@ const App = () => {
     }
   };
 
-  const [showAnswer, setAnswer] = useState(false);
-
-  const toggleAnswer = () => {
-      setAnswer(!showAnswer);
-  };
-
   return (
     <div className="App">
       <h2>Guess the K-POP group!</h2>
-      <h3>Listen to the song and study to memorize your favorite songs!</h3>
-      <CardDeck flashcard={flashcards[currCard]} onClick={toggleAnswer} show_answer={showAnswer}/>
+      <h3>Learn K-POP groups and memorize ones to listen to later.</h3>
+      <h5>Number of Flashcards: 10</h5>
+      <CardDeck flashcard={flashcards[currCard]}/>
       <div className="buttons">
         <Button arrow='<-' onClick={handlePrev}/>
         <Button arrow='->' onClick={handleNext}/>

@@ -20,6 +20,10 @@ h3 {
   margin-top: 5px;
 }
 
+h5 {
+  margin: 0px;
+  margin-top: 10px;
+}
 .buttons {
   display: flex;
   gap: 10px;
