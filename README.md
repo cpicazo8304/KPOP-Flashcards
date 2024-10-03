@@ -38,7 +38,8 @@ GIF created with [ScreenToGif](https://www.screentogif.com/)
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Struggled to find a way to shuffle the cards, but discovered an algorithm that is used for shuffling
+and applied that to my code while smoothing it in with my current code so that it can work well.
 
 ## License
 
